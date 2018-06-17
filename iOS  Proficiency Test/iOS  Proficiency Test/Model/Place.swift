@@ -9,6 +9,7 @@
 import UIKit
 import EVReflection
 
+// model to bind the place data using EVObject
 class Place: EVObject {
     var title: String?
     var pointOfInterest: [PointOfInterest] = []
@@ -34,8 +35,6 @@ class Place: EVObject {
                 completionHandler(Place(), nil)
                 return
             }
-//
-//            let taskData = dataTask.map { Task.create($0) }
             let place = Place(dictionary: dataPlace)
             
             completionHandler(place, nil)
@@ -43,6 +42,7 @@ class Place: EVObject {
     }
 }
 
+// model to bind the Point of interest for a place
 class PointOfInterest: EVObject {
     var title: String?
     var placeDescription: String?

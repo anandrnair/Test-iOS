@@ -19,19 +19,14 @@ enum Method: String {
     case DELETE = "DELETE"
 }
 
-
-let networkReachabilityError = NSError(domain: "Test.Reachability", code: 100, userInfo: ["title": &&"alert_title_network_unreachable", "message": &&"alert_message_network_unreachable"])
-
 let baseUrl = "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/"
 
-class APIRouter: URLSession {
-    
-    
-    
+// API Router to consume the REST service
+class APIRouter: NSObject {
     
     class func dataTaskWithMethod(_ method: Method, path: String, shouldShowHUD: Bool = true, completionHandler: @escaping (_ dictDict: [String: Any]?, _ error: NSError?) -> ()) {
         
-        
+        // check network availablity
         let reachability = Reachability()
         if reachability?.connection == Reachability.Connection.none{
             
@@ -40,7 +35,6 @@ class APIRouter: URLSession {
             
             // no network
             print("no network connection")
-            //completionHandler(nil, networkReachabilityError)
             return
         }
         
@@ -66,7 +60,6 @@ class APIRouter: URLSession {
                 return
             }
             
-//            let jsonString = String(decoding: data, as: UTF8.self)
             let jsonString = String.init(data: data, encoding: String.Encoding.ascii) ?? ""
             
             let dict = convertToDictionary(text: jsonString)

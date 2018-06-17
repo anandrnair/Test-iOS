@@ -1,13 +1,14 @@
 //
 //  NSObjectExtensions.swift
-//  ATC
+//  iOS  Proficiency Test
 //
-//  Created by Thahir Maheen on 14/09/15.
-//  Copyright (c) 2015 digitalbrandgroup. All rights reserved.
+//  Created by Anand R Nair on 17/06/18.
+//  Copyright © 2018 Anand R Nair. All rights reserved.
 //
 
 import Foundation
 
+// extension to perform a block of code after a delay
 protocol PerformSelectorProtocol {
     func performClosureAfterDelay(_ delay: Double, closure: @escaping () -> ())
 }

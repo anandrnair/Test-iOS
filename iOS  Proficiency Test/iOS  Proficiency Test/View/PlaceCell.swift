@@ -8,6 +8,7 @@
 
 import UIKit
 
+// the place cell which is used in the tableview
 class PlaceCell: UITableViewCell {
     
     @IBOutlet weak var placeImageView: UIImageView!
@@ -18,14 +19,6 @@ class PlaceCell: UITableViewCell {
         didSet {
             configureView()
         }
-    }
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
     }
     
     func configureView() {

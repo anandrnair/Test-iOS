@@ -11,6 +11,7 @@ import Foundation
 import UIKit
 import Kingfisher
 
+// extension to load images into imageview asynchronously using Kingfisher
 extension UIImageView {
     public typealias CompletionHandler = ((_ image: Image?, _ error: NSError?, _ cacheType: CacheType, _ imageURL: URL?) -> Void)
     

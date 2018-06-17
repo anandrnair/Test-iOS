@@ -9,6 +9,8 @@
 import Foundation
 
 // MARK: Localization
+
+// prefix operator to help with localization
 prefix operator &&
 
 prefix func && (string: String) -> String {

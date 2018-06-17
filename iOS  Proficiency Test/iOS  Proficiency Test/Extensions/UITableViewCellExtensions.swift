@@ -1,9 +1,9 @@
 //
 //  UITableViewExtensions.swift
-//  FlexYourMacros
+//  iOS  Proficiency Test
 //
-//  Created by dbgattila on 4/22/15.
-//  Copyright (c) 2015 Digital Brand Group. All rights reserved.
+//  Created by Anand R Nair on 17/06/18.
+//  Copyright © 2018 Anand R Nair. All rights reserved.
 //
 
 import Foundation

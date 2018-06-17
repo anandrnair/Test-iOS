@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+
+// extension to show alert view with different combinations
 class Alert : NSObject {
     
     @objc let style:UIAlertControllerStyle
