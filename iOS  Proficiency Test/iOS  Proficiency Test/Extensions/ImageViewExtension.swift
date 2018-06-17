@@ -12,9 +12,13 @@ import UIKit
 import Kingfisher
 
 extension UIImageView {
-    func loadImage(withURLString urlString: String?,  placeholderImage: UIImage? =  #imageLiteral(resourceName: "image-placeholder")) {
+    public typealias CompletionHandler = ((_ image: Image?, _ error: NSError?, _ cacheType: CacheType, _ imageURL: URL?) -> Void)
+    
+    func loadImage(withURLString urlString: String?,  placeholderImage: UIImage? = #imageLiteral(resourceName: "image-placeholder"), completionHandler: CompletionHandler? = nil) {
         if let imageUrl = urlString?.toURL() {
-            self.kf.setImage(with: imageUrl, placeholder: placeholderImage, options: nil, progressBlock: nil, completionHandler: nil)
+            self.kf.setImage(with: imageUrl, placeholder: placeholderImage, options: nil, progressBlock: nil) { (image, error, cacheType, url) in
+                completionHandler?(image,error, cacheType, url)
+            }
         }
         else{
             self.image = placeholderImage
