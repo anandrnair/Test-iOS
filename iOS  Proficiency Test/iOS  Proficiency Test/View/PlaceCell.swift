@@ -28,7 +28,7 @@ class PlaceCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func configureCell() {
+    func configureView() {
         titleLabel.text = pointOfInterest?.title
         descriptionLabel.text = pointOfInterest?.placeDescription
         placeImageView.loadImage(withURLString: pointOfInterest?.imageUrl)
