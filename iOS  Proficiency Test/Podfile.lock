@@ -1,16 +1,22 @@
 PODS:
+  - EVReflection (5.6.1):
+    - EVReflection/Core (= 5.6.1)
+  - EVReflection/Core (5.6.1)
   - Kingfisher (4.8.0)
 
 DEPENDENCIES:
+  - EVReflection
   - Kingfisher
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - EVReflection
     - Kingfisher
 
 SPEC CHECKSUMS:
+  EVReflection: d05ebbafc851b7a4cd3d625182662463a5819ab8
   Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
 
-PODFILE CHECKSUM: ae567990dc3a2597845117a7df086caab3bfc95b
+PODFILE CHECKSUM: 721f2c6c299580697002ad534d36551c50c799a6
 
 COCOAPODS: 1.5.3
