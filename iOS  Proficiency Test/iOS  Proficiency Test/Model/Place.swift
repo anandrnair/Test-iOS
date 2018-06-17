@@ -17,9 +17,9 @@ class Place: EVObject {
         return [(keyInObject: "pointOfInterest",keyInResource: "rows")]
     }
     
-    class func getPlaceDetails(_ completionHandler: @escaping (_ place: Place, _ error: NSError?) -> ()) {
+    class func getPlaceDetails(shouldShowProgressHud: Bool = true,_ completionHandler: @escaping (_ place: Place, _ error: NSError?) -> ()) {
         
-        APIRouter.dataTaskWithMethod(Method.GET, path: "facts.json") { (dataDict, error) in
+        APIRouter.dataTaskWithMethod(Method.GET, path: "facts.json", shouldShowHUD: shouldShowProgressHud) { (dataDict, error) in
             
             // handle error
             if error != nil {
@@ -38,7 +38,7 @@ class Place: EVObject {
 //            let taskData = dataTask.map { Task.create($0) }
             let place = Place(dictionary: dataPlace)
             
-            completionHandler(Place(), nil)
+            completionHandler(place, nil)
         }
     }
 }
