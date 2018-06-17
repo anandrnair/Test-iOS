@@ -16,6 +16,31 @@ class Place: EVObject {
     override public func propertyMapping() -> [(keyInObject: String?, keyInResource: String?)] {
         return [(keyInObject: "pointOfInterest",keyInResource: "rows")]
     }
+    
+    class func getPlaceDetails(_ completionHandler: @escaping (_ place: Place, _ error: NSError?) -> ()) {
+        
+        APIRouter.dataTaskWithMethod(Method.GET, path: "facts.json") { (dataDict, error) in
+            
+            // handle error
+            if error != nil {
+                Alert.alert(&&"alert_place_fetch_failed").show()
+                completionHandler(Place(), error)
+                print("Error: \(String(describing: error))")
+                return
+            }
+            
+            guard let dataPlace: NSDictionary = dataDict as NSDictionary? else {
+                Alert.alert(&&"alert_place_fetch_failed").show()
+                completionHandler(Place(), nil)
+                return
+            }
+//
+//            let taskData = dataTask.map { Task.create($0) }
+            let place = Place(dictionary: dataPlace)
+            
+            completionHandler(Place(), nil)
+        }
+    }
 }
 
 class PointOfInterest: EVObject {
