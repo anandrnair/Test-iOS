@@ -12,12 +12,11 @@
 		1712E9C320D6490F0065DC42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1712E9C120D6490F0065DC42 /* Main.storyboard */; };
 		1712E9C520D649100065DC42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1712E9C420D649100065DC42 /* Assets.xcassets */; };
 		1712E9C820D649100065DC42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1712E9C620D649100065DC42 /* LaunchScreen.storyboard */; };
-		DCC9F072BD42AA7C32F8857F /* Pods_iOS__Proficiency_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12BFA0FC76A0629003D185EA /* Pods_iOS__Proficiency_Test.framework */; };
+		1712E9D520D64F840065DC42 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1712E9D420D64F840065DC42 /* Place.swift */; };
 		F20841104ED867B3F6F8C923 /* Pods_iOS_Proficiency_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4201FAB33B3F8DA080E7EC8 /* Pods_iOS_Proficiency_Test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0AF27BBFBC03AD7431F7D0AB /* Pods-iOS  Proficiency Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS  Proficiency Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS  Proficiency Test/Pods-iOS  Proficiency Test.release.xcconfig"; sourceTree = "<group>"; };
 		12BFA0FC76A0629003D185EA /* Pods_iOS__Proficiency_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS__Proficiency_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		163108AB6662C6D30A308FC6 /* Pods-iOS Proficiency Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Proficiency Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS Proficiency Test/Pods-iOS Proficiency Test.debug.xcconfig"; sourceTree = "<group>"; };
 		1712E9BA20D6490F0065DC42 /* iOS Proficiency Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Proficiency Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,9 +26,9 @@
 		1712E9C420D649100065DC42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1712E9C720D649100065DC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1712E9C920D649100065DC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1712E9D420D64F840065DC42 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		4B5C22A442F4B8D3D1998C0E /* Pods-iOS Proficiency Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Proficiency Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS Proficiency Test/Pods-iOS Proficiency Test.release.xcconfig"; sourceTree = "<group>"; };
 		A4201FAB33B3F8DA080E7EC8 /* Pods_iOS_Proficiency_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Proficiency_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6FCF897B618142317EA3E49 /* Pods-iOS  Proficiency Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS  Proficiency Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS  Proficiency Test/Pods-iOS  Proficiency Test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCC9F072BD42AA7C32F8857F /* Pods_iOS__Proficiency_Test.framework in Frameworks */,
 				F20841104ED867B3F6F8C923 /* Pods_iOS_Proficiency_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +64,7 @@
 		1712E9BC20D6490F0065DC42 /* iOS  Proficiency Test */ = {
 			isa = PBXGroup;
 			children = (
+				1712E9D320D64F160065DC42 /* Model */,
 				1712E9BD20D6490F0065DC42 /* AppDelegate.swift */,
 				1712E9BF20D6490F0065DC42 /* ViewController.swift */,
 				1712E9C120D6490F0065DC42 /* Main.storyboard */,
@@ -76,11 +75,17 @@
 			path = "iOS  Proficiency Test";
 			sourceTree = "<group>";
 		};
+		1712E9D320D64F160065DC42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1712E9D420D64F840065DC42 /* Place.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		77E190F3599174B3E5676878 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B6FCF897B618142317EA3E49 /* Pods-iOS  Proficiency Test.debug.xcconfig */,
-				0AF27BBFBC03AD7431F7D0AB /* Pods-iOS  Proficiency Test.release.xcconfig */,
 				163108AB6662C6D30A308FC6 /* Pods-iOS Proficiency Test.debug.xcconfig */,
 				4B5C22A442F4B8D3D1998C0E /* Pods-iOS Proficiency Test.release.xcconfig */,
 			);
@@ -210,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1712E9D520D64F840065DC42 /* Place.swift in Sources */,
 				1712E9C020D6490F0065DC42 /* ViewController.swift in Sources */,
 				1712E9BE20D6490F0065DC42 /* AppDelegate.swift in Sources */,
 			);
