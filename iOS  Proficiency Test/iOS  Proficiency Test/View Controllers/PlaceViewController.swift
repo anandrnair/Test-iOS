@@ -14,11 +14,13 @@ class PlaceViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        getPlaceInformation()
     }
 
     func getPlaceInformation() {
-        
+        Place.getPlaceDetails { (place, error) in
+            
+        }
     }
 
 }
