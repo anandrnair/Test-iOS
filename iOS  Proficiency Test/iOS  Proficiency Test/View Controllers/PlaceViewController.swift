@@ -54,6 +54,10 @@ class PlaceViewController: UITableViewController {
 
 extension PlaceViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        tableView.hideEmptyTableView()
+        if place?.pointOfInterest.count ?? 0 <= 0 {
+            tableView.showEmptyTableView()
+        }
         return place?.pointOfInterest.count ?? 0
     }
     
