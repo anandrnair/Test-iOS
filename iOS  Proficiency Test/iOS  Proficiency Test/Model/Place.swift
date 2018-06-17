@@ -10,7 +10,7 @@ import UIKit
 import EVReflection
 
 class Place: EVObject {
-    var title = ""
+    var title: String?
     var pointOfInterest: [PointOfInterest] = []
     
     override public func propertyMapping() -> [(keyInObject: String?, keyInResource: String?)] {
@@ -44,9 +44,9 @@ class Place: EVObject {
 }
 
 class PointOfInterest: EVObject {
-    var title = ""
-    var placeDescription = ""
-    var imageUrl = ""
+    var title: String?
+    var placeDescription: String?
+    var imageUrl: String?
     
     override public func propertyMapping() -> [(keyInObject: String?, keyInResource: String?)] {
         return [(keyInObject: "placeDescription",keyInResource: "description"),
