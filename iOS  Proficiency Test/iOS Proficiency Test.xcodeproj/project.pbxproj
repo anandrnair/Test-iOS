@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		0AF27BBFBC03AD7431F7D0AB /* Pods-iOS  Proficiency Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS  Proficiency Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS  Proficiency Test/Pods-iOS  Proficiency Test.release.xcconfig"; sourceTree = "<group>"; };
 		12BFA0FC76A0629003D185EA /* Pods_iOS__Proficiency_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS__Proficiency_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1712E9BA20D6490F0065DC42 /* iOS  Proficiency Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS  Proficiency Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1712E9BA20D6490F0065DC42 /* iOS Proficiency Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Proficiency Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1712E9BD20D6490F0065DC42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1712E9BF20D6490F0065DC42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1712E9C220D6490F0065DC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 		1712E9BB20D6490F0065DC42 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1712E9BA20D6490F0065DC42 /* iOS  Proficiency Test.app */,
+				1712E9BA20D6490F0065DC42 /* iOS Proficiency Test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,23 +91,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1712E9B920D6490F0065DC42 /* iOS  Proficiency Test */ = {
+		1712E9B920D6490F0065DC42 /* iOS Proficiency Test */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1712E9CC20D649100065DC42 /* Build configuration list for PBXNativeTarget "iOS  Proficiency Test" */;
+			buildConfigurationList = 1712E9CC20D649100065DC42 /* Build configuration list for PBXNativeTarget "iOS Proficiency Test" */;
 			buildPhases = (
 				EF0A870FE92B540091D34B6C /* [CP] Check Pods Manifest.lock */,
 				1712E9B620D6490F0065DC42 /* Sources */,
 				1712E9B720D6490F0065DC42 /* Frameworks */,
 				1712E9B820D6490F0065DC42 /* Resources */,
-				8A94FC4A264E56AF5A2D42C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "iOS  Proficiency Test";
+			name = "iOS Proficiency Test";
 			productName = "iOS  Proficiency Test";
-			productReference = 1712E9BA20D6490F0065DC42 /* iOS  Proficiency Test.app */;
+			productReference = 1712E9BA20D6490F0065DC42 /* iOS Proficiency Test.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -125,7 +124,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1712E9B520D6490F0065DC42 /* Build configuration list for PBXProject "iOS  Proficiency Test" */;
+			buildConfigurationList = 1712E9B520D6490F0065DC42 /* Build configuration list for PBXProject "iOS Proficiency Test" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,7 +137,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1712E9B920D6490F0065DC42 /* iOS  Proficiency Test */,
+				1712E9B920D6490F0065DC42 /* iOS Proficiency Test */,
 			);
 		};
 /* End PBXProject section */
@@ -157,24 +156,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8A94FC4A264E56AF5A2D42C7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iOS  Proficiency Test/Pods-iOS  Proficiency Test-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS  Proficiency Test/Pods-iOS  Proficiency Test-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EF0A870FE92B540091D34B6C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,7 +363,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1712E9B520D6490F0065DC42 /* Build configuration list for PBXProject "iOS  Proficiency Test" */ = {
+		1712E9B520D6490F0065DC42 /* Build configuration list for PBXProject "iOS Proficiency Test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1712E9CA20D649100065DC42 /* Debug */,
@@ -391,7 +372,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1712E9CC20D649100065DC42 /* Build configuration list for PBXNativeTarget "iOS  Proficiency Test" */ = {
+		1712E9CC20D649100065DC42 /* Build configuration list for PBXNativeTarget "iOS Proficiency Test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1712E9CD20D649100065DC42 /* Debug */,
