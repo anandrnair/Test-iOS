@@ -68,12 +68,11 @@
 		1712E9BC20D6490F0065DC42 /* iOS  Proficiency Test */ = {
 			isa = PBXGroup;
 			children = (
+				17269EE220D667D200C79C14 /* View Controllers */,
 				17269EDF20D6659F00C79C14 /* Extensions */,
 				17269EDC20D664A300C79C14 /* View */,
 				1712E9D320D64F160065DC42 /* Model */,
 				1712E9BD20D6490F0065DC42 /* AppDelegate.swift */,
-				1712E9BF20D6490F0065DC42 /* PlaceViewController.swift */,
-				1712E9C120D6490F0065DC42 /* Main.storyboard */,
 				1712E9C420D649100065DC42 /* Assets.xcassets */,
 				1712E9C620D649100065DC42 /* LaunchScreen.storyboard */,
 				1712E9C920D649100065DC42 /* Info.plist */,
@@ -93,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				17269EDD20D664C800C79C14 /* PlaceCell.swift */,
+				17269EE320D667E500C79C14 /* Storyboards */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -103,6 +103,22 @@
 				17269EE020D665B600C79C14 /* ImageViewExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		17269EE220D667D200C79C14 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1712E9BF20D6490F0065DC42 /* PlaceViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		17269EE320D667E500C79C14 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1712E9C120D6490F0065DC42 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		77E190F3599174B3E5676878 /* Pods */ = {

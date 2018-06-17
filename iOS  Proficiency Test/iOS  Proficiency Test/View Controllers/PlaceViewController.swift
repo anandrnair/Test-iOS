@@ -9,28 +9,29 @@
 import UIKit
 
 class PlaceViewController: UITableViewController {
+    
+    var place: Place?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func getPlaceInformation() {
+        
     }
-
 
 }
 
 extension PlaceViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return place?.pointOfInterest.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "kPlaceCell", for: indexPath)
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "kPlaceCell", for: indexPath) as? PlaceCell
+        cell?.pointOfInterest = place?.pointOfInterest[indexPath.row]
+        return cell ?? UITableViewCell()
     }
 }
 
