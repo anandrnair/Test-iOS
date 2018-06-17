@@ -89,11 +89,8 @@
 				17269EDF20D6659F00C79C14 /* Extensions */,
 				17269EDC20D664A300C79C14 /* View */,
 				1712E9D320D64F160065DC42 /* Model */,
-				1712E9BD20D6490F0065DC42 /* AppDelegate.swift */,
-				1712E9C420D649100065DC42 /* Assets.xcassets */,
-				1712E9C620D649100065DC42 /* LaunchScreen.storyboard */,
+				17269EF520D6E65800C79C14 /* Supporting Files */,
 				1712E9C920D649100065DC42 /* Info.plist */,
-				17269EED20D6DFDE00C79C14 /* Localizable.strings */,
 			);
 			path = "iOS  Proficiency Test";
 			sourceTree = "<group>";
@@ -151,6 +148,17 @@
 				17269EEB20D691F200C79C14 /* Alert.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		17269EF520D6E65800C79C14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1712E9BD20D6490F0065DC42 /* AppDelegate.swift */,
+				1712E9C420D649100065DC42 /* Assets.xcassets */,
+				1712E9C620D649100065DC42 /* LaunchScreen.storyboard */,
+				17269EED20D6DFDE00C79C14 /* Localizable.strings */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		77E190F3599174B3E5676878 /* Pods */ = {
