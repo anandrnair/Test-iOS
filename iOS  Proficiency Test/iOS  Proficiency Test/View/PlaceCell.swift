@@ -29,10 +29,8 @@ class PlaceCell: UITableViewCell {
     }
     
     func configureView() {
-        titleLabel.text = pointOfInterest?.title
-        descriptionLabel.text = pointOfInterest?.placeDescription
         placeImageView.loadImage(withURLString: pointOfInterest?.imageUrl)
-        
+        titleLabel.text = self.pointOfInterest?.title
+        descriptionLabel.text = self.pointOfInterest?.placeDescription
     }
-
 }
