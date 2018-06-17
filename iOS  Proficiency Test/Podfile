@@ -8,4 +8,7 @@ target 'iOS Proficiency Test' do
   # Pods for iOS  Proficiency Test
   pod 'Kingfisher'
   pod 'EVReflection'
+  pod 'SVProgressHUD'
+  pod 'ReachabilitySwift'
+  pod 'SwiftyJSON'
 end
