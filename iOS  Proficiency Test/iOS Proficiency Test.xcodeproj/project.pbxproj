@@ -19,6 +19,10 @@
 		17269EE720D6900400C79C14 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17269EE620D6900400C79C14 /* StringExtensions.swift */; };
 		17269EE920D6907600C79C14 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17269EE820D6907600C79C14 /* Utils.swift */; };
 		17269EEC20D691F200C79C14 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17269EEB20D691F200C79C14 /* Alert.swift */; };
+		17269EEE20D6DFDE00C79C14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17269EED20D6DFDE00C79C14 /* Localizable.strings */; };
+		17269EF020D6E0E800C79C14 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17269EEF20D6E0E700C79C14 /* UITableViewExtensions.swift */; };
+		17269EF220D6E16800C79C14 /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17269EF120D6E16800C79C14 /* UITableViewCellExtensions.swift */; };
+		17269EF420D6E23300C79C14 /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17269EF320D6E23300C79C14 /* NSObjectExtensions.swift */; };
 		F20841104ED867B3F6F8C923 /* Pods_iOS_Proficiency_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4201FAB33B3F8DA080E7EC8 /* Pods_iOS_Proficiency_Test.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +43,10 @@
 		17269EE620D6900400C79C14 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		17269EE820D6907600C79C14 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		17269EEB20D691F200C79C14 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		17269EED20D6DFDE00C79C14 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		17269EEF20D6E0E700C79C14 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		17269EF120D6E16800C79C14 /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
+		17269EF320D6E23300C79C14 /* NSObjectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; };
 		4B5C22A442F4B8D3D1998C0E /* Pods-iOS Proficiency Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Proficiency Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS Proficiency Test/Pods-iOS Proficiency Test.release.xcconfig"; sourceTree = "<group>"; };
 		A4201FAB33B3F8DA080E7EC8 /* Pods_iOS_Proficiency_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Proficiency_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -85,6 +93,7 @@
 				1712E9C420D649100065DC42 /* Assets.xcassets */,
 				1712E9C620D649100065DC42 /* LaunchScreen.storyboard */,
 				1712E9C920D649100065DC42 /* Info.plist */,
+				17269EED20D6DFDE00C79C14 /* Localizable.strings */,
 			);
 			path = "iOS  Proficiency Test";
 			sourceTree = "<group>";
@@ -109,6 +118,9 @@
 		17269EDF20D6659F00C79C14 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				17269EF320D6E23300C79C14 /* NSObjectExtensions.swift */,
+				17269EEF20D6E0E700C79C14 /* UITableViewExtensions.swift */,
+				17269EF120D6E16800C79C14 /* UITableViewCellExtensions.swift */,
 				17269EE020D665B600C79C14 /* ImageViewExtension.swift */,
 				17269EE620D6900400C79C14 /* StringExtensions.swift */,
 			);
@@ -220,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1712E9C820D649100065DC42 /* LaunchScreen.storyboard in Resources */,
+				17269EEE20D6DFDE00C79C14 /* Localizable.strings in Resources */,
 				1712E9C520D649100065DC42 /* Assets.xcassets in Resources */,
 				1712E9C320D6490F0065DC42 /* Main.storyboard in Resources */,
 			);
@@ -281,13 +294,16 @@
 			files = (
 				17269EEC20D691F200C79C14 /* Alert.swift in Sources */,
 				1712E9D520D64F840065DC42 /* Place.swift in Sources */,
+				17269EF220D6E16800C79C14 /* UITableViewCellExtensions.swift in Sources */,
 				17269EE520D6694A00C79C14 /* APIRouter.swift in Sources */,
 				1712E9C020D6490F0065DC42 /* PlaceViewController.swift in Sources */,
 				17269EE720D6900400C79C14 /* StringExtensions.swift in Sources */,
+				17269EF020D6E0E800C79C14 /* UITableViewExtensions.swift in Sources */,
 				17269EE120D665B600C79C14 /* ImageViewExtension.swift in Sources */,
 				1712E9BE20D6490F0065DC42 /* AppDelegate.swift in Sources */,
 				17269EDE20D664C800C79C14 /* PlaceCell.swift in Sources */,
 				17269EE920D6907600C79C14 /* Utils.swift in Sources */,
+				17269EF420D6E23300C79C14 /* NSObjectExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
