@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  iOS Proficiency Test
+
+  Created by Anand R Nair on 17/06/18.
+  Copyright © 2018 Anand R Nair. All rights reserved.
+*/
+
+// Common texts
+"empty_tableview_message"       = "No data to display";
+"dismiss"                       = "Dismiss";
+"ok"                            = "Ok";
+"cancel"                        = "Cancel";
+"error"                         = "Error";
+"empty_tableview_message"       = "No data to display";
+"dismiss"                       = "Dismiss";
+"ok"                            = "Ok";
+"cancel"                        = "Cancel";
+"error"                         = "Error";
+"description"                   = "Description";
+"save"                          = "Save";
+"alert_title_network_unreachable" = "No Internet";
+"alert_message_network_unreachable" = "No network connection. Please try again";

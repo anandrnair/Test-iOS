@@ -10,16 +10,16 @@ import UIKit
 import EVReflection
 
 class Place: EVObject {
-    var title = ""
+    var title: String?
     var pointOfInterest: [PointOfInterest] = []
     
     override public func propertyMapping() -> [(keyInObject: String?, keyInResource: String?)] {
         return [(keyInObject: "pointOfInterest",keyInResource: "rows")]
     }
     
-    class func getPlaceDetails(_ completionHandler: @escaping (_ place: Place, _ error: NSError?) -> ()) {
+    class func getPlaceDetails(shouldShowProgressHud: Bool = true,_ completionHandler: @escaping (_ place: Place, _ error: NSError?) -> ()) {
         
-        APIRouter.dataTaskWithMethod(Method.GET, path: "facts.json") { (dataDict, error) in
+        APIRouter.dataTaskWithMethod(Method.GET, path: "facts.json", shouldShowHUD: shouldShowProgressHud) { (dataDict, error) in
             
             // handle error
             if error != nil {
@@ -38,15 +38,15 @@ class Place: EVObject {
 //            let taskData = dataTask.map { Task.create($0) }
             let place = Place(dictionary: dataPlace)
             
-            completionHandler(Place(), nil)
+            completionHandler(place, nil)
         }
     }
 }
 
 class PointOfInterest: EVObject {
-    var title = ""
-    var placeDescription = ""
-    var imageUrl = ""
+    var title: String?
+    var placeDescription: String?
+    var imageUrl: String?
     
     override public func propertyMapping() -> [(keyInObject: String?, keyInResource: String?)] {
         return [(keyInObject: "placeDescription",keyInResource: "description"),

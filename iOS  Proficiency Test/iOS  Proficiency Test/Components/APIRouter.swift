@@ -66,7 +66,8 @@ class APIRouter: URLSession {
                 return
             }
             
-            let jsonString = String(decoding: data, as: UTF8.self)
+//            let jsonString = String(decoding: data, as: UTF8.self)
+            let jsonString = String.init(data: data, encoding: String.Encoding.ascii) ?? ""
             
             let dict = convertToDictionary(text: jsonString)
             
